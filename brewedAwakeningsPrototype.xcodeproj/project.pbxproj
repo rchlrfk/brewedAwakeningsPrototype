@@ -14,6 +14,7 @@
 		A400CDAD27A7800B00BE44C3 /* brewedAwakeningsPrototype.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A400CDAB27A7800B00BE44C3 /* brewedAwakeningsPrototype.xcdatamodeld */; };
 		A400CDAF27A7801700BE44C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A400CDAE27A7801700BE44C3 /* Assets.xcassets */; };
 		A400CDB227A7801700BE44C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A400CDB027A7801700BE44C3 /* LaunchScreen.storyboard */; };
+		F336D5D827A84AE600C95C83 /* coffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F336D5D727A84AE600C95C83 /* coffeeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A400CDAE27A7801700BE44C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A400CDB127A7801700BE44C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A400CDB327A7801700BE44C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F336D5D727A84AE600C95C83 /* coffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffeeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				A400CDA227A7800B00BE44C3 /* AppDelegate.swift */,
 				A400CDA427A7800B00BE44C3 /* SceneDelegate.swift */,
 				A400CDA627A7800B00BE44C3 /* ViewController.swift */,
+				F336D5D727A84AE600C95C83 /* coffeeViewController.swift */,
 				A400CDA827A7800B00BE44C3 /* Main.storyboard */,
 				A400CDAE27A7801700BE44C3 /* Assets.xcassets */,
 				A400CDB027A7801700BE44C3 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				A400CDA727A7800B00BE44C3 /* ViewController.swift in Sources */,
 				A400CDAD27A7800B00BE44C3 /* brewedAwakeningsPrototype.xcdatamodeld in Sources */,
+				F336D5D827A84AE600C95C83 /* coffeeViewController.swift in Sources */,
 				A400CDA327A7800B00BE44C3 /* AppDelegate.swift in Sources */,
 				A400CDA527A7800B00BE44C3 /* SceneDelegate.swift in Sources */,
 			);
