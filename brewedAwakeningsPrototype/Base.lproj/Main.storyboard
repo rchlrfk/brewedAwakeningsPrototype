@@ -75,6 +75,9 @@
                                 <rect key="frame" x="45" y="71" width="346" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xQR-YK-Uwq" appends="YES" id="7a8-4x-xbv"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tea - $1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixj-tm-HB4">
                                 <rect key="frame" x="420" y="38" width="288" height="25"/>
@@ -87,6 +90,9 @@
                                 <rect key="frame" x="420" y="71" width="346" height="465"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="G8r-6p-0A1" appends="YES" id="O5F-LA-IuC"/>
+                                </connections>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2nJ-be-hfQ">
                                 <rect key="frame" x="433" y="592" width="320" height="441"/>
@@ -128,6 +134,9 @@
                                 <rect key="frame" x="45" y="643" width="346" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="DSb-ZG-KBT" appends="YES" id="PGq-TY-3sW"/>
+                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="coffee - $1.75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXr-4v-h8p">
                                 <rect key="frame" x="62" y="38" width="329" height="25"/>
@@ -140,9 +149,6 @@
                         <viewLayoutGuide key="safeArea" id="Lq1-Aj-z7h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="gtA-5d-Nwk" appends="YES" id="Ze1-hG-19j"/>
-                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Z1h-Wt-W0a"/>
                     <connections>
@@ -153,9 +159,19 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JlV-m9-mHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="gtA-5d-Nwk">
+                <tapGestureRecognizer id="xQR-YK-Uwq">
                     <connections>
-                        <action selector="whenTapGesturePressed:" destination="qwY-qM-mKk" id="91A-jK-zk0"/>
+                        <action selector="whenTapGesturePressed1:" destination="qwY-qM-mKk" id="0VI-Gl-YhS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="G8r-6p-0A1">
+                    <connections>
+                        <action selector="whenTapGesturePressed2:" destination="qwY-qM-mKk" id="zu1-k0-0R7"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="DSb-ZG-KBT">
+                    <connections>
+                        <action selector="whenTapGesturePressed3:" destination="qwY-qM-mKk" id="uWG-sd-SnF"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

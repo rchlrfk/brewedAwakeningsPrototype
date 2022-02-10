@@ -9,7 +9,7 @@ import UIKit
 
 class coffeeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
-    
+    //items
     @IBOutlet var images: [UIImageView]!
     
     @IBOutlet weak var tableView: UITableView!
@@ -22,23 +22,53 @@ class coffeeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
 
     }
-    
-    @IBAction func whenTapGesturePressed(_ sender: UITapGestureRecognizer)
+
+    // When the coffee image is pressed
+    @IBAction func whenTapGesturePressed1(_ sender: UITapGestureRecognizer)
     {
         let selectedPoint = sender.location(in: view)
-        print(selectedPoint)
-        for img in images
-        {
-            if img.frame.contains(selectedPoint)
+            for img in images
             {
-                let newItem = "coffee"
-                items.append(newItem)
-                tableView.reloadData()
+                if img.frame.contains(selectedPoint)
+                {
+                    let newItem = "Coffee"
+                    items.append(newItem)
+                    tableView.reloadData()
+                }
             }
-        }
     }
     
+    // When the tea image is pressed
+    @IBAction func whenTapGesturePressed2(_ sender: UITapGestureRecognizer)
+    {
+        let selectedPoint = sender.location(in: view)
+            for img in images
+            {
+                if img.frame.contains(selectedPoint)
+                {
+                    let newItem = "Tea"
+                    items.append(newItem)
+                    tableView.reloadData()
+                }
+            }
+    }
     
+    // When the flavor image is pressed
+    @IBAction func whenTapGesturePressed3(_ sender: UITapGestureRecognizer)
+    {
+        let selectedPoint = sender.location(in: view)
+            for img in images
+            {
+                if img.frame.contains(selectedPoint)
+                {
+                    let newItem = "Flavor"
+                    items.append(newItem)
+                    tableView.reloadData()
+                }
+            }
+    }
+    
+    // Add things to table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return items.count
@@ -51,6 +81,7 @@ class coffeeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    // Delete things from table view
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath)
     {
         if editingStyle == UITableViewCell.EditingStyle.delete
