@@ -71,13 +71,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="coffee-1" translatesAutoresizingMaskIntoConstraints="NO" id="F76-am-r92">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="coffee-1" translatesAutoresizingMaskIntoConstraints="NO" id="F76-am-r92">
                                 <rect key="frame" x="45" y="71" width="346" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="GtM-pa-iH0" appends="YES" id="FnT-i7-ML0"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tea - $1.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixj-tm-HB4">
                                 <rect key="frame" x="420" y="38" width="288" height="25"/>
@@ -86,7 +83,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="tea" translatesAutoresizingMaskIntoConstraints="NO" id="fll-S2-jPr">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="tea" translatesAutoresizingMaskIntoConstraints="NO" id="fll-S2-jPr">
                                 <rect key="frame" x="420" y="71" width="346" height="465"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -127,7 +124,7 @@
                                     <segue destination="Jnw-XJ-GcP" kind="presentation" modalPresentationStyle="fullScreen" id="Fg7-tO-o6N"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flavor" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-4S-unA">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flavor" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-4S-unA">
                                 <rect key="frame" x="45" y="643" width="346" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
@@ -143,19 +140,22 @@
                         <viewLayoutGuide key="safeArea" id="Lq1-Aj-z7h"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gtA-5d-Nwk" appends="YES" id="Ze1-hG-19j"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Z1h-Wt-W0a"/>
                     <connections>
-                        <outlet property="flavorImageView" destination="ccS-4S-unA" id="wrz-EM-HKo"/>
-                        <outlet property="imageView" destination="F76-am-r92" id="mKq-iW-pzr"/>
                         <outlet property="tableView" destination="2nJ-be-hfQ" id="JQn-ml-ziy"/>
-                        <outlet property="teaImageView" destination="fll-S2-jPr" id="b5y-Sx-ASF"/>
+                        <outletCollection property="images" destination="F76-am-r92" collectionClass="NSMutableArray" id="Q4o-zh-yTt"/>
+                        <outletCollection property="images" destination="fll-S2-jPr" collectionClass="NSMutableArray" id="jnC-j7-YYk"/>
+                        <outletCollection property="images" destination="ccS-4S-unA" collectionClass="NSMutableArray" id="wSz-7O-ibp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JlV-m9-mHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="GtM-pa-iH0">
+                <tapGestureRecognizer id="gtA-5d-Nwk">
                     <connections>
-                        <action selector="whenCoffeePressed:" destination="qwY-qM-mKk" id="v78-MX-Hgr"/>
+                        <action selector="whenTapGesturePressed:" destination="qwY-qM-mKk" id="91A-jK-zk0"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
